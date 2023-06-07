@@ -1,0 +1,201 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald';
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /* min-width: 100vh; */
+}
+
+header {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    background-color: #2e3030;
+    color: white;
+    font-style: italic;
+    font-size: 30px;
+    height: 10vh;
+    padding: 15px;
+}
+
+main div {
+    font-size: 25px;
+}
+
+main div label {
+    text-align: justify;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.top-section {
+    border: 15px groove #2e3030;
+    padding: 30px;
+    margin: 30px;
+}
+
+main h1 {
+    font-size: 35px;
+    font-style: italic;
+    padding-left: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form h3 {
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+
+.length-selection {
+    font-size: 22px;
+}
+
+.passgen {
+    text-align: center;
+}
+
+textarea {
+    /* width: 100%; */
+    font-size: 20px;
+    padding: 15px;
+    text-align: center;
+    font-family: 'Source Code Pro';
+    resize: none;
+}
+
+button {
+    width: 75%;
+    font-size: 25px;
+    border-radius: 15px;
+    margin-top: 20px;
+    background-color: #2e3030;
+
+    color: white;
+}
+
+button:hover {
+    background-color: #617878;
+    cursor: pointer;
+}
+
+input[type=checkbox] {
+    height: 22px;
+    width: 22px;
+}
+
+input[type=number] {
+    height: auto;
+    width: 10vh;
+}
+
+.top-header, .bottom-header {
+    width: 100%;
+}
+
+.bottom-header h1 {
+    padding-bottom: 2px;
+}
+
+/* Included since google font features built-in padding */
+header h1, p {
+    line-height: 1;
+}
+
+.bottom-section {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    padding: 40px;
+}
+
+.bottom-section div {
+    width: 100%;
+    text-align: center;
+    padding: 8px 8px 8px 8px;
+}
+
+.bottom-section p {
+    padding-bottom: 5px;
+}
+
+footer {
+    margin-top: auto;
+    height: 10vh;
+    background-color: #2e3030;
+    color: white;
+    text-align: center;
+    font-size: 27px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* TODO: add hover state to anchors */
+footer a {
+    text-decoration: none;
+    color: white;
+    list-style: 1;
+    padding: 8px;
+}
+
+footer a:hover {
+    text-decoration: underline;    
+}
+
+
+@media only screen and (max-width: 1700px) {
+
+    .top-section {
+        width: 98%;
+    }
+
+    textarea {
+        width: 95%;
+    }
+
+    .bottom-section {
+        display: grid;
+        grid-template-columns: auto;
+        padding: 0;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 30px;
+        height: auto;
+    }
+
+    header h1 {
+        padding-bottom: 7px;
+    }
+  }
+
+
+
+
+
+
+
+
+

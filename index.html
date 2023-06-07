@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Oswald&family=Source Code Pro&family=Bebas Neue">
+  <title>HallPass</title>
+</head>
+<body>
+  <header>
+    <h1>HallPass</h1>
+    <p>Passwords for the 21st century</p>
+  </header>
+  <main>
+    <div class="top-header">
+      <h1>Create your own...</h1>
+    </div>
+    <section class="top-section">
+      <div>
+        <input name="selection" type="checkbox" id="uppercase"></input>
+        <label for="uppercase">Uppercase Letters</label>
+      </div>
+      <div>
+        <input name="selection" type="checkbox" id="lowercase"></input>
+        <label for="lowercase">Lowercase Letters</label>
+      </div>
+      <div>
+        <input name="selection" type="checkbox" id="numeric"></input>
+        <label for="numeric">Numbers</label>
+      </div>
+      <div>
+        <input name="selection" type="checkbox" id="special"></input>
+        <label for="special">Special Characters</label>
+      </div>
+      <div>
+        <label for="length">Length(10-128 characters)</label>
+        <input class="length-selection" name="selection" type="number" id="length" required min="10" max="128"></input>
+      </div>
+      <div class="passgen">
+        <form>
+          <h3>Your password:</h3>
+          <textarea placeholder="Make selections and click Generate!" name="genpass" id="genpass" cols="30" rows="5" readonly></textarea>
+          <button type="button" id="btn">Generate</button>
+        </form>
+      </div>
+    </section>
+    <div class="bottom-header">
+      <h1>...or choose from our selection</h1>
+    </div>
+    <section class="bottom-section">
+      <div>
+        <p>The White House</p>
+        <textarea name="grid" id="gridOne" cols="30" rows="7" readonly>Z;D5hy!qweqeg!;>aCczFV!!JD6&ukiR#q.#!E\n#Lzi-W9@0/5w%6n6raMJD:ZhvSklwewEL@TWei#i!Z80nyD+i5nV&ig#sKT?=Y/+Hy@gSbO:lH8$pD?TjAZ
+        </textarea>
+      </div>
+      <div>
+        <p>The Salty Spitoon</p>
+        <textarea name="grid" id="gridTwo" cols="30" rows="7" readonly>
+          d820!l9sz[z;?#24vr=t(r#vt3!yc^[[km+9p./1t/k0b9.q6ckf9^n-?&1z=?)pd#6va5;y5svohrr#=$*;^cdr!/@4g[lf^by
+        </textarea>
+      </div>
+      <div>
+        <p>The Novice</p>
+        <textarea name="grid" id="gridThree" cols="30" rows="7" readonly>password123</textarea>
+      </div>
+      <div>
+        <p>The Scrabble Board</p>
+        <textarea name="grid" id="gridFour" cols="30" rows="7" readonly>NLDCZCXTURBVDDTYSXITPHSZHSPMKHPLSECWBLTKAETTMADTJGNOQMVBJPYMGECKZAMOOJDGIVMDYJBFJABBQMPECFHJUNW
+        </textarea>
+      </div>
+      <div>
+        <p>The Hackerman</p>
+        <textarea name="grid" id="gridFive" cols="30" rows="7" readonly>RRCl<@*Ri^?@p0BBW!&l>Dn3P(Wk?i>9.vp#c$dbLh!&O=DkTPeR+@o8O.GWPS[5;I=U/&l&limB[l:8#*=c/*H0il*y06V7M)oc</textarea>
+      </div>
+      <div>
+        <p>The AutoFill</p>
+        <textarea name="grid" id="gridSix" cols="30" rows="7" readonly>*v$m@qgj&7n%fn9c)azr)bi;!c8p[p.gba%g7k^kj4<n0>tx!g!j0/f:;g0z#z/s[e.52:m4h$-</textarea>
+      </div>
+      <div>
+        <p>The Archaeologist</p>
+        <textarea name="grid" id="gridSeven" cols="30" rows="7" readonly>*/&&$#[?$?@^/;!+?:!?[=!^:@>@>/-&+;@.#!/*+^*@..&#--.&@@#[&/=?;$@[&-&>[^.+@&!</textarea>
+      </div>
+      <div>
+        <p>The Numerophile</p>
+        <textarea name="grid" id="gridEight" cols="30" rows="7" readonly>607812021114458131190412345544480472177730184017961798348404534926580027622807069022768109437508961327617382670188356334</textarea>
+      </div>
+    
+    </section>
+  </main>
+  <footer>
+    <a href="https://github.com/greg-pfeifer">GitHub</a>
+    <a href="https://www.linkedin.com/in/greg-p-54590b15a">LinkedIn</a>
+  </footer>
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
